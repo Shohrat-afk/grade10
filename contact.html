@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Bake & Eat</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+                <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contact Section -->
+    <main>
+        <section id="contact" aria-labelledby="contact-heading">
+            <h2 id="contact-heading">Contact Us</h2>
+            <form id="contactForm" aria-describedby="contact-help-text">
+                <p id="contact-help-text">Feel free to reach out to us using the form below.</p>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your full name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your email address" required>
+                <button type="submit">Send</button>
+            </form>
+            <div class="container">
+                <div class="iframe">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?..." 
+                        title="Our Location" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy"></iframe>
+                </div>
+            </div>
+            <address>
+                <p>Email: <a href="mailto:your-email@example.com">Bake&Eat@gmail.com</a></p>
+                <p>Phone: <a href="tel:+1234567890">(+855) 10 168 168</a></p>
+            </address>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Bake & Eat. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+               

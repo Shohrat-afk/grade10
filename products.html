@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Bake & Eat</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="products.html" class="active">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Product Categories Section -->
+    <main>
+        <section id="products" aria-labelledby="products-heading">
+            <h2 id="products-heading">Product Categories</h2>
+            
+            <!-- Description Text -->
+            <p>
+                Explore our wide variety of treats and pick your favorites from the categories below. 
+                Each one is crafted with the finest ingredients to satisfy your sweet tooth!
+                Click the button below to view our delicious products!
+            </p>
+            
+            <div class="container">
+                <div class="buttons">
+                    <button onclick="loadCategory('cookies')">Cookies</button>
+                    <button onclick="loadCategory('brownies')">Brownies</button>
+                    <button onclick="loadCategory('cakes')">Cakes</button>
+                </div>
+                <div id="product-list" aria-live="polite"></div>
+            </div>
+                <div id="product-list" aria-live="polite"></div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Bake & Eat. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+

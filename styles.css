@@ -1,0 +1,274 @@
+/* General Reset */
+body {
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #ffeef2; /* Soft pastel pink background */
+    color: #4a4a4a;
+}
+
+h1, h2, h3 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+p {
+    text-align: center;
+}
+
+/* Navigation */
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    background-color: #ffc0cb; /* Light pastel pink for navigation */
+    padding: 1em;
+    margin: 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #b56576; /* Deeper pastel pink for contrast */
+    font-weight: 600;
+    padding: 0.5em 1em;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #f8a5c2; /* Soft hover effect */
+    color: white;
+    border-radius: 5px;
+}
+
+/* Sections */
+section {
+    padding: 3em 1em;
+}
+
+#home {
+    background: linear-gradient(135deg, #ffb6c185, #ffe4e600); /* Gradient with pastel pink shades */
+    color: white;
+    text-align: center;
+    padding: 5em 1em;
+    position: relative;
+}
+
+/* Product Section */
+#products {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+}
+
+.product-grid {
+    display: flex; /* Makes products horizontal */
+    flex-wrap: nowrap; /* Prevents wrapping for horizontal alignment */
+    gap: 1.5em; /* Adds spacing between product cards */
+    overflow-x: auto; /* Adds horizontal scroll for smaller screens */
+    padding: 1em;
+    scroll-snap-type: x mandatory; /* Smooth snap scrolling */
+}
+
+.product-grid::-webkit-scrollbar {
+    height: 8px;
+}
+
+.product-grid::-webkit-scrollbar-thumb {
+    background-color: #f497a5; /* Styled scrollbar */
+    border-radius: 4px;
+}
+
+.product-grid::-webkit-scrollbar-track {
+    background-color: #ffeef2;
+}
+
+.product {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 1em;
+    min-width: 250px; /* Set minimum width for horizontal layout */
+    background-color: #fff5f7; /* Light pastel pink background */
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    scroll-snap-align: start; /* Ensures each card snaps into view */
+}
+
+.product img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1em;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+button {
+    background-color: #f497a5; /* Muted pink button */
+    color: white;
+    border: none;
+    padding: 0.7em 1.2em;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ec6a7b; /* Slightly darker pastel pink hover effect */
+}
+
+/* Contact Form */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 2em;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+form input, form button {
+    width: 100%;
+    padding: 0.8em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
+}
+
+form input:focus {
+    border-color: #f497a5;
+    outline: none;
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #ffc0cb; /* Match navigation pastel pink */
+    color: #555;
+    font-size: 0.9em;
+}
+.product img {
+    width: 200px; /* Set a fixed width */
+    height: 200px; /* Set a fixed height */
+    object-fit: cover; /* Ensures the image scales and crops proportionally */
+    border-radius: 8px; /* Keep the rounded edges */
+    margin-bottom: 1em;
+}
+.iframe{
+    text-align: center;
+}
+blockquote{
+    text-align: center;
+    font-family: sans-serif;
+}
+.spinner {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    align-items: center;
+}
+.spinner img{
+    max-width: 100%;
+    max-height: 100%;
+    position: relative;
+
+}
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+/* Style for the "Add to Favorite" heart */
+.favorite {
+    font-size: 20px;
+    color: grey;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: color 0.3s ease;
+}
+
+.favorite.active {
+    color: red;
+}
+.myVid{
+    width: 100%;
+    height: auto;
+    z-index: -1000;
+    position: relative;
+
+}
+#video {
+    max-width: 100%;
+}
+
+/* How to Store Our Sweets Section */
+#storage-tips {
+    text-align: center;
+    padding: 2rem;
+}
+
+.tips-list {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.tip-item {
+    background-color: #f9f9f9;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.tip-item img {
+    width: 250px; /* Set a fixed width */
+    height: 150px; /* Set a fixed height */
+    object-fit: cover; /* Ensures images fit without distortion */
+    border-radius: 8px;
+}
+
+.tip-item h3 {
+    margin: 1rem 0 0.5rem;
+    color: #333;
+}
+
+.tip-item p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.cart-item-image {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+/* ... other styles */
